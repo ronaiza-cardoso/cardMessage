@@ -4,9 +4,11 @@ import { StatusBar, Splashscreen } from 'ionic-native';
 
 // import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
+import { Fire } from './util/fire';
 
 @Component({
-  templateUrl: 'app.html'
+  templateUrl: 'app.html',
+  providers: [Fire]
 })
 export class MyApp {
   rootPage = LoginPage;
